@@ -1,0 +1,25 @@
+<p>test works!</p>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Position</th>
+      <th>Salary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      *ngFor="let employee of employees; index as i; let e = even; let o = odd"
+      [ngClass]="{ oddstyle: o, evenstyle: e, highlight:hover }"
+            
+    >
+      <td appHover>{{ employee.name }}</td>
+      <td appHover>{{ employee.age }}</td>
+      <td appHover>{{ employee.gender }}</td>
+      <td appHover>{{ GetPosition(i) }}</td>
+      <td appHover>{{ GetSalary(i) }}</td>
+    </tr>
+  </tbody>
+</table>

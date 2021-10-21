@@ -1,0 +1,11 @@
+.oddstyle{
+    background-color: lightblue;
+}
+
+.evenstyle{
+    background-color: lightcoral;
+}
+
+.highlight{
+    color: yellow;
+}
