@@ -1,0 +1,23 @@
+<p>book works!</p>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Author</th>
+      <th>Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      *ngFor="let book of books; index as i; let e = even; let o = odd"
+      [ngClass]="{ oddstyle: o, evenstyle: e}"
+            
+    >
+      <td appHover>{{ book.BookId }}</td>
+      <td appHover>{{ book.Title }}</td>
+      <td appHover>{{ book.Author }}</td>
+      <td appHover>{{ book.Category }}</td>
+    </tr>
+  </tbody>
+</table>
