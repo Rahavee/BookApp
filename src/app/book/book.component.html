@@ -1,23 +1,23 @@
-<p>book works!</p>
+
 <table class="table table-bordered">
   <thead>
     <tr>
-      <th>ID</th>
       <th>Name</th>
-      <th>Author</th>
-      <th>Category</th>
+      <th>Gender</th>
+      <th>Location</th>
+      <th>Email</th>
     </tr>
   </thead>
   <tbody>
     <tr
       *ngFor="let book of books; index as i; let e = even; let o = odd"
       [ngClass]="{ oddstyle: o, evenstyle: e}"
-            
+      (click)="OnSelect(i)"
     >
-      <td appHover>{{ book.BookId }}</td>
-      <td appHover>{{ book.Title }}</td>
-      <td appHover>{{ book.Author }}</td>
-      <td appHover>{{ book.Category }}</td>
+      <td><button mat-button color="accent" > {{ book.name.first +" "+ book.name.last}}</button></td>
+      <td appHover>{{ book.gender}}</td>
+      <td appHover>{{ book.location.city }}</td>
+      <td appHover>{{ book.email }}</td>
     </tr>
   </tbody>
 </table>

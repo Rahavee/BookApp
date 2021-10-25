@@ -1,6 +1,6 @@
 export interface IBook{
-    BookId: number;
-    Title:string
-    Author:string;
-    Category:number;
+    name: string;
+    gender:string
+    city:string;
+    email:string;
 }

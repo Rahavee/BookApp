@@ -8,11 +8,13 @@ import { IBook } from '../model/IBook';
 })
 export class BookAPIServiceService {
 
-  private _url: string = "https://localhost:44373/api/Books";
+  private _url: string = "https://randomuser.me/api/?results=5&seed=befbe7091dbefaf2";
   constructor(private http: HttpClient) { }
 
-  getBooks(): Observable<IBook[]>{
-    return this.http.get<IBook[]>(this._url);
+  getBooks(): Observable<JSON>{
+    return this.http.get<JSON>(this._url);
   }
+
+  
 }
 
