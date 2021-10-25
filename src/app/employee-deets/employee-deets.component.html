@@ -1,6 +1,6 @@
 <div *ngIf="employee">
     <h2>Employee Detail</h2>
-    <p>Name: {{employee.name.first + " "+ employee.name.last}}</p>
+    <p>Name: {{employee.name.first + " "+ employee.name.last | Name}}</p>
     <p>Gender: {{employee.gender}}</p>
     <p>Location: {{employee.location.city}}</p>
     <p>Email: {{employee.email}}</p>

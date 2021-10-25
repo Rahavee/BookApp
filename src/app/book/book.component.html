@@ -14,7 +14,7 @@
       [ngClass]="{ oddstyle: o, evenstyle: e}"
       (click)="OnSelect(i)"
     >
-      <td><button mat-button color="accent" > {{ book.name.first +" "+ book.name.last}}</button></td>
+      <td><button mat-button color="accent" > {{ book.name.first +" "+ book.name.last | Name}}</button></td>
       <td appHover>{{ book.gender}}</td>
       <td appHover>{{ book.location.city }}</td>
       <td appHover>{{ book.email }}</td>

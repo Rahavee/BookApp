@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar'
 import {MatButtonModule} from '@angular/material/button';
 import { EmployeeDeetsComponent } from './employee-deets/employee-deets.component';
+import { NamePipe } from './pipes/name.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { EmployeeDeetsComponent } from './employee-deets/employee-deets.componen
     TestComponent,
     HoverDirective,
     BookComponent,
-    EmployeeDeetsComponent
+    EmployeeDeetsComponent,
+    NamePipe
   ],
   imports: [
     BrowserModule,
